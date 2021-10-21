@@ -8,7 +8,7 @@ int main(void) {
   int a = 5;
   char b = 'B';
   double c = 20.34;
-  float d = 20.34;
+  float d = 36.34;
 
   printf("Integer: %d, memorija: %lu bajta.\n", a, sizeof(a));
   printf("Char: %c, memorija: %lu bajta.\n", b, sizeof(b));
