@@ -10,16 +10,17 @@ gdje je g, t, d redom predstavlja traženi broj godina, tjedana i dana koji pred
 
 int main(void) {
 
-  int x, g, t, d;
+  int x, t, d;
+  float g;
 
   printf("Unesite broj dana: \n");
   scanf("%d", &x);
  
-  g = x / 365;
+  g = (float)x / 365;
   t = x % 365 / 7;
-  d = x - (g * 365 + t * 7);
+  d = x - ((int)g * 365 + t * 7);
 
-  printf("%d godina, %d tjedana i %d dana.", g, t, d);
+  printf("%.2f godina, %d tjedana i %d dana.", g, t, d);
 
   return 0;
 }
