@@ -2,27 +2,20 @@
 
 int main(void) {
      
-     int i, znamenka;
-     int broj = 0;
+     int i, znamenka, bz, sum = 0;
+     float avg;
 
-     float avg = 0;
-     int sum = 0;
-
-     for (i = 100; i < 1000; i++) {
+     for (i = 100; i <= 999; i++) {
           znamenka = i % 10;
 
-          if (znamenka % 3 == 0 && znamenka != 0) {
-               sum += i;
+          if (znamenka % 3 == 0) {
                printf("%d ", i);
-               broj++;
+               sum += i;
+               bz++;
           }
-          else {
-               continue;
-          }
-     }
+     } 
 
-     avg = sum / broj;
-     printf("\nAritmeticka sredina brojeva iznosi %.2f", avg);
-
+     avg = (float)sum / (float)bz;
+     printf("\nAritmeticka sredina: %.2f", avg);
      return 0;
 }
