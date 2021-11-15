@@ -8,9 +8,12 @@ na ekran */
 int main(void) {
 
   int i;
+
+  // inicijalizacija
   int ip[N] = { 1, 2, 3, 4, 5 };
   float fp[M] = { 1.1, 2.2, 3.3 };
 
+  // ispisujemo sve clanove niza ip
   for (i = 0; i < 5; i++) {
     printf("%d ", ip[i]);
   }
