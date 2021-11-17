@@ -7,7 +7,7 @@ polja. */
 
 int main(void) {
 
-  int n, i, a[25], priv;
+  int n, i, d, a[25], priv[25];
 
   do {
     printf("Unesite jedan cijeli broj iz intervala [6,25>: \n");
@@ -20,9 +20,27 @@ int main(void) {
     scanf("%d", &a[i]);
   }
 
-  for (i = n - 1; i >= 0; i--) {
-    printf("%d ", a[i]);    
+  for (i = n - 1, d = 0; i >= 0; i--, d++) {
+    priv[d] = a[i];
+  }
+
+  printf("\nPocetno polje :\n");
+
+  for (i = 0; i < n; i++) {
+    printf("%d", a[i]);
+  }
+
+  printf("\nObrnuto polje: \n");
+  
+  for (i = 0; i < n; i++) {
+    printf("%d ", priv[i]);    
   } 
+
+  printf("\nDrugi nacin obrtanja: \n");
+
+  for (i = n - 1; i >= 0; i--) {
+    printf("%d", a[i]);
+  }
 
   return 0;
 }
