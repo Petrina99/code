@@ -4,7 +4,7 @@
 /* 4. Omogućiti korisniku unos jednog stringa od maksimalno 75 znakova. Provjeriti i na ekran ispisati 
 odgovarajuću poruku, ima li string oblik adrese e-pošte (sadrži znak @ i nakon njega točku). */
 
-// glup zadatak ko kurac 
+// zadatak jako ocajno postavljen tak da neznam kak ce na lv-u trazit rjesvanje 
 
 int main(void) {
 
@@ -13,7 +13,8 @@ int main(void) {
      int i, c, t = 0;
 
      fgets(a, 76, stdin);
-
+     
+     // prvo trazimo di je @
      for (i = 0; i < strlen(a); i++) {
           if (a[i] == '@') {
                c = i;
@@ -21,6 +22,7 @@ int main(void) {
           }
      }
 
+     // postavljamo indeks od znaka @ kao brojac i trazimo tocku nakon njega
      for (c; c < strlen(a); c++) {
           if (a[c] == '.') {
                t = 1;

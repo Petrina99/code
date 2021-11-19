@@ -26,10 +26,11 @@ int main(void) {
           }
      }
 
+     // moramo svaki pomonzit s 1.0f da ih pretvorimo u float type
      pm = (m * 1.0f / n * 1.0f) * 100;
      pv = (v * 1.0f / n * 1.0f) * 100;
 
-     printf("Velika slova cine %.2f posto.", pv);
-     printf("\nMala slova cine %.2f posto.", pm);
+     printf("Velika slova cine %.2f %%.", pv);
+     printf("\nMala slova cine %.2f %%.", pm);
      return 0; 
 }

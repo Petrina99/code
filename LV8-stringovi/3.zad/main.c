@@ -13,6 +13,7 @@ int main(void) {
      fgets(a, 101, stdin);
      fgets(b, 101, stdin);
 
+     // prvo trazimo samoglasnike pomocu switch case-a u oba stringa
      for (i = 0; i < strlen(a); i++) {
           switch(a[i]) {
                case 'a':

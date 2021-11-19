@@ -12,6 +12,7 @@ int main(void) {
 
      fgets(a, 81, stdin);
      
+     // sam trazimo dva uzastopna indeksa koji se sastoje od m i a
      for (i = 0; i < strlen(a); i++) {
           if (a[i] == 'm' && a[i+1] == 'a') {
                c++;

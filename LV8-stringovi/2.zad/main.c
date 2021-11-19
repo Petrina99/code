@@ -11,6 +11,7 @@ int main(void) {
 
      fgets(a, 51, stdin);
 
+     // brojimo znamenke u stringu
      for (i = 0; i < strlen(a); i++) {
           if (a[i] >= '0' && a[i] <= '9') {
                znamenke[c] = i;

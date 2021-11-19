@@ -14,18 +14,19 @@ int main(void) {
 
      m = strlen(a);
 
+     // svaki put kad naletimo na razmak broj rijeci se povecava
      for (i = 0; i < m; i++) {
-          if (a[i] == ' ') {
+          if (a[i] == ' ' || a[i] == ',' || a[i] == '.') {
                c++;
           } 
      }
 
+     // ako user sam stisne enter
      if (a[0] == '\n') {
           c = 0;
      }
 
      printf("Recenica koju ste unijeli ima %d rijeci.", c);
-     printf("%d", m);
 
      return 0;
 }
