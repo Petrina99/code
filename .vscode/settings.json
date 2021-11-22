@@ -1,6 +1,7 @@
 {
   "files.associations": {
     "*.css": "css",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "math.h": "c"
   }
 }
