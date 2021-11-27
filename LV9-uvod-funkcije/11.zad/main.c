@@ -24,7 +24,7 @@ int main(void) {
 
 void binarni(int n) {
 
-  int i = 0, j, a[10];
+  int i = 0, j, a[8];
 
   while(n != 0) {
     a[i] = n % 2;
