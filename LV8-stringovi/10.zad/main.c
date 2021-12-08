@@ -17,13 +17,13 @@ int main(void) {
      printf("Unesite drugi string do 20 znakova: ");
      fgets(b, 21, stdin);
 
-     m = (strlen(a) - 1) + (strlen(b) - 1);
-
-     for (i = 0; i < strlen(a) - 1; i++) {
+     m = strlen(a) + strlen(b);
+     
+     for (i = 0; a[i] != '\n'; i++) {
           c[i] = a[i];
      }
 
-     for (i, j = 0; i < m, j < strlen(b) - 1; i++, j++) {
+     for (i, j = 0; i < m, b[j] != '\n'; i++, j++) {
           c[i] = b[j];
      }
 
