@@ -8,7 +8,7 @@ int main(void) {
 
   int m, n, i, j;
 
-  float a[12][14], b[12][14], sv;
+  float a[12][14], sv;
 
   printf("Unesite broj redova matrice [3, 13>: \n");
 
@@ -30,14 +30,6 @@ int main(void) {
     }
   }
 
-  printf("Popunite drugu matricu: \n");
-  
-  for (i = 0; i < m; i++) {
-    for (j = 0; j < n; j++) {
-      scanf("%f", &b[i][j]);
-    }
-  }
-
   for (i = 0; i < n; i++) {
     sv = 0;
 
@@ -49,17 +41,6 @@ int main(void) {
 
     printf("Aritmeticka sredina %d. stupca 1. matrice iznosi %f\n", i + 1, sv);
   }
-
-  for (i = 0; i < n; i++) {
-    sv = 0;
-
-    for (j = 0; j < m; j++) {
-      sv += b[j][i];
-    }
-
-    sv = sv / m;
-
-    printf("Aritmeticka sredina %d. stupca 2. matrice iznosi %f\n", i + 1, sv);
-  }
+  
   return 0;
 }
